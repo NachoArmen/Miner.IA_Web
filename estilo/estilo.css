@@ -1,0 +1,82 @@
+/*font-family: 'Wallpoet', cursive;*/ /*CALIGRAFIA PARA TEXTOS*/
+/*COMIENZO NAVBAR*/
+.navbar-brand {
+    font-size: 1.5rem;
+    margin-right: 4rem;
+  }
+  .nav-link {
+    font-size: 1.2rem;
+    margin-right: 1.5rem;
+  }
+  .navbar-toggler {
+    border: none;
+    outline: none;
+  }
+  .navbar-toggler-icon {
+    background-image: url('https://cdn1.iconfinder.com/data/icons/basic-ui-elements-coloricon/21/23_-_Menu_List_Nav_Lines_List_Menu_Short_Nav_Menu_List-512.png');
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+  }
+  .navbar-toggler:focus {
+    outline: none;
+  }
+  .form-control {
+    border-radius: 0;
+  }
+
+  footer {
+    background-color: #f8f9fa;
+    color: #707070;
+    font-size: 16px;
+    padding: 60px 0px;
+  }
+  
+  footer h5 {
+    font-weight: 700;
+    font-size: 18px;
+  }
+  
+  footer i {
+    color: #707070;
+  }
+  
+  footer a:hover i {
+    color: #46a2e3;
+  }
+  
+  @media screen and (max-width: 768px) {
+    footer {
+      text-align: center;
+    }
+  }
+
+
+/*FIN NAVBAR*/
+
+  h1{
+    text-align: center;
+  }
+
+
+.title-idx{
+  display: inline-block;
+  justify-content: end;
+  font-family: 'Wallpoet', cursive;
+  text-align: center;
+    
+}
+
+.text-idx{
+
+  display: flex;
+  justify-content: flex-start;
+  
+
+}
+
+.cali{
+    font-family: 'Wallpoet', cursive;
+    
+}
+
