@@ -17,7 +17,6 @@ include_once "header.php";
   </div>
 </div>
 
-
         <!--Cards para Our Partners-->
 <main class="container-fluid">
   <div class="row">
@@ -95,7 +94,7 @@ include_once "header.php";
 
 
 
-
+<br>
 
 
 
