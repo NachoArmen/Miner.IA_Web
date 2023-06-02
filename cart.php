@@ -2,7 +2,7 @@
 include_once "header.php";
 ?>
 
-<h1>Carrito en desarrollo</h1>
+<h1 class="cali">Carrito en desarrollo</h1>
 
 <?php
 include_once "footer.php";
