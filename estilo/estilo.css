@@ -79,4 +79,13 @@
     font-family: 'Wallpoet', cursive;
     
 }
+#send{
+  justify-content: end;
+  position: relative;
+}
 
+section{
+display: flex;
+justify-content: end;
+
+}
