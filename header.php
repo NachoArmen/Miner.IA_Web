@@ -38,10 +38,7 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="products.php">Productos</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Admin</a>
-            </li>        
+            </li>      
           </ul>
         <form class="form-inline mt-2 mt-md-0 mx-auto">
             <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
@@ -49,7 +46,7 @@
         </form>
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <a class="nav-link" href="#">Cart 
+                <a class="nav-link" href="cart.php">Cart 
                     <span class="badge badge-primary">0</span>
                 </a>
             </li>
