@@ -24,13 +24,9 @@ include_once "header.php";
                         <div class="input-group mb-3 col">
                             <input type="email" name="email" class="form-control input_user" placeholder="E-Mail">
                         </div>
-                        
-
                         <div class="cali col">
                             <p>Password:</p>
                         </div>
-
-
                         <div class="input-group mb-3 col">
                             <input type="password" name="contrasena" class="form-control input_pass" placeholder="Password">
                         </div>
