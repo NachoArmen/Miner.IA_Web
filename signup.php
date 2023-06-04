@@ -18,20 +18,20 @@ include_once "header.php";
                     <form action="controlador/registroLogica.php" method="POST">
                         <div class="form-row">
                              <div class="input-group mb-3 col-6">
-                                <input type="text" name="nombre" class="form-control input_user" placeholder="Nombre">
+                                <input type="text" name="nombre" class="form-control input_user" placeholder="Name">
                             </div>
                             <div class="input-group mb-3 col-6">
-                                <input type="text" name="apellido" class="form-control input_pass" placeholder="Apellido">
+                                <input type="text" name="apellido" class="form-control input_pass" placeholder="Surname">
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="input-group mb-3 col-12">
-                                <input type="email" name="email" class="form-control input_user" placeholder="Email">
+                                <input type="email" name="email" class="form-control input_user" placeholder="E-Mail">
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="input-group mb-3 col-6">
-                                <input type="text" name="usuario" class="form-control input_user" placeholder="Usuario">
+                                <input type="text" name="usuario" class="form-control input_user" placeholder="User">
                             </div>
                             <div class="input-group mb-3 col-6">
                                 <input type="password" name="contrasena" class="form-control input_pass" placeholder="contraseña">

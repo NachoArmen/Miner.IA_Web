@@ -31,7 +31,7 @@
     <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav mr-auto cali">
             <li class="nav-item">
-                <a class="nav-link" href="products.php">Productos</a>
+                <a class="nav-link" href="products.php">Products</a>
             </li>      
             <li class="nav-item active">
                 <a class="nav-link" href="login.php">Login</a>

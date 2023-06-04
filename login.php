@@ -18,15 +18,25 @@ include_once "header.php";
                 <!--En method aclaramos que usamos POST, mientras que en Action señalamos dónde está la lógica que usaremos-->
             <form action="controlador/loginLogica.php" method="POST">              
                     <div class="form-col">
-                        <div class="input-group mb-3 col">
-                        <input type="email" name="email" class="form-control input_user" placeholder="Su mail">
+                        <div class="cali col">
+                            <p>E-Mail:</p>
                         </div>
                         <div class="input-group mb-3 col">
-                        <input type="password" name="contrasena" class="form-control input_pass" placeholder="Su contraseña">
+                            <input type="email" name="email" class="form-control input_user" placeholder="E-Mail">
+                        </div>
+                        
+
+                        <div class="cali col">
+                            <p>Password:</p>
+                        </div>
+
+
+                        <div class="input-group mb-3 col">
+                            <input type="password" name="contrasena" class="form-control input_pass" placeholder="Password">
                         </div>
                     </div>
                     <div class="d-flex justify-content-center mt-3 login_container">
-                    <button type="submit" class="cali">Log Me in</button>
+                        <button type="submit" class="cali">Log Me in</button>
                     </div>
                 </form>
             </div>  
@@ -35,10 +45,7 @@ include_once "header.php";
 </div>
 </div>
 <br>
-<div class="row cali justify-content-center">
-    <!--href="PAGINA DE ADMIN O ABM"-->
-    <a href="#">¿Admin?...¡Click me!</a>
-</div>
+
 <br>
 <?php
 include_once "footer.php";
