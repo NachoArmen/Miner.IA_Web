@@ -6,10 +6,11 @@ include_once "header.php";
 <h1 class="cali">¿Ready to check out?</h1>
 
 <section>
-<div class="container-fluid">
-<h2 class="cali">Payment Information</h2>
-    <div class="row">      
-        <form action="POST">
+<div class="container-fluid justify-content">
+    <br>
+<h2 class="cali text-center">Payment Information</h2>
+    <div class="row justify-content-center">      
+        <form method="POST" action="#">
         <div class="row">  
             <div class="col">
                 <div class="col">
@@ -43,8 +44,8 @@ include_once "header.php";
              
          </div>            
     </div>
-<h2 class="cali">Shipping Information</h2>
-        <div class="row">
+<h2 class="cali text-center">Shipping Information</h2>
+        <div class="row justify-content-center">
             <div class="row">
             <div class="col">
                 <div class="col">
@@ -80,8 +81,8 @@ include_once "header.php";
             
         </div> 
         <br>
-            <div class="col send">
-                <input type="submit" id="sub" >
+            <div class="row justify-content-center cali">
+                <button type="submit" id="sub" >Login</button>
             </div> 
     </form>
 </div>

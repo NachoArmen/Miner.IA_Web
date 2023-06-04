@@ -12,16 +12,16 @@ include_once "header.php";
             <div class="d-flex justify-content-center form_container">
                 <!--En method aclaramos que usamos POST, mientras que en Action señalamos dónde está la lógica que usaremos-->
             <form action="controlador/loginLogica.php" method="POST">              
-                    <div class="form-row">
-                        <div class="input-group mb-3 col-6">
+                    <div class="form-col">
+                        <div class="input-group mb-3 col">
                         <input type="email" name="email" class="form-control input_user" placeholder="Su mail">
                         </div>
-                        <div class="input-group mb-3 col-6">
+                        <div class="input-group mb-3 col">
                         <input type="password" name="contrasena" class="form-control input_pass" placeholder="Su contraseña">
                         </div>
                     </div>
                     <div class="d-flex justify-content-center mt-3 login_container">
-                    <button type="submit">Ingresar</button>
+                    <button type="submit">Login</button>
                     </div>
                 </form>
             </div>  
