@@ -3,7 +3,11 @@ include_once "header.php";
 ?>
 <br>
 <h1 class="cali">Sign Up</h1>
-
+<br>
+<div class="row cali justify-content-center">
+    <h2>Welcome to the Miner.IA family.Feel free to sign up.</h2>
+</div>
+<br>
 <!--Formulario de registro-->
 <div class="row justify-content-center">
     <div class="box">
@@ -34,7 +38,7 @@ include_once "header.php";
                             </div>
                         </div>
                         <div class="d-flex justify-content-center mt-3 login_container">
-                            <button type="submit">Registrarse</button>
+                            <button type="submit" class="cali">Sign Me Up</button>
                         </div>
                        </div>
                     </form>

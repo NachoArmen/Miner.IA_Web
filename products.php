@@ -12,7 +12,7 @@ include_once "header.php";
              <div class="card-body">
                 <h5 class="card-title">Gold (Au)</h5>
                 <p class="card-text">INFO: PUREZA... PRECIO IDEAL...</p>
-                <a href="ACA IRIA PARA EL CARRITO" class="btn btn-primary">ADD</a>
+                <a href="cart.php" class="btn btn-primary">ADD</a>
              </div>
             </div>          
         </div>
