@@ -30,15 +30,15 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="products.php">Productos</a>
+            </li>      
             <li class="nav-item active">
                 <a class="nav-link" href="login.php">Login</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="signup.php">Sign Up</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="products.php">Productos</a>
-            </li>      
           </ul>
         <form class="form-inline mt-2 mt-md-0 mx-auto">
             <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
