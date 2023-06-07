@@ -27,7 +27,7 @@ include('ORM/orm.php');
 
         var bt = document.getElementById('volver');
     bt.onclick = function(){
-	    //window.location = "../index.php";
+	    window.location = "../index.php";
         }   
 
 

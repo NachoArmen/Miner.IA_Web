@@ -8,10 +8,10 @@
         <h5 class="text-uppercase mb-0" ><a href="../index.php"><strong>Miner.IA</strong></a></h5>
       </div>
       <div class="d-flex justify-content-center mx-auto mb-4">
-        <a href="#"><i class="fab fa-facebook fa-2x mx-3"></i></a>
-        <a href="#"><i class="fab fa-twitter fa-2x mx-3"></i></a>
-        <a href="#"><i class="fab fa-youtube fa-2x mx-3"></i></a>
-        <a href="#"><i class="fab fa-instagram fa-2x mx-3"></i></a>
+        <a href="https://es-la.facebook.com/"><i class="fab fa-facebook fa-2x mx-3"></i></a>
+        <a href="https://twitter.com/?lang=es"><i class="fab fa-twitter fa-2x mx-3"></i></a>
+        <a href="https://www.youtube.com/?hl=ES"><i class="fab fa-youtube fa-2x mx-3"></i></a>
+        <a href="https://www.instagram.com/"><i class="fab fa-instagram fa-2x mx-3"></i></a>
       </div>
     </div>
   </div>
