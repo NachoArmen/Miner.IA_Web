@@ -24,15 +24,17 @@ $cnx->query($sql) or die(print_r($cnx->error));
 }
 
 //Metodo login
-function login($email, $clave){
+function login($email, $contrasena){
 
 
   $cnx = OpenCon();
-  $consulta = "SELECT email, contrasena FROM registro WHERE email='$email' AND contrasena=MD5('$clave') LIMIT 1";
+  $sql= "SELECT email, contrasena, usuario FROM registro WHERE email='$email' AND contrasena=MD5('$contrasena') LIMIT 1";
   
-  $f = mysqli_query($cnx, $consulta);
-  print ($f);
-  $a = mysqli_fetch_assoc($f);
+ $a = $cnx->query($sql) or die(print_r($cnx->error));
+
+  //$f = mysqli_query($consulta);
+  //print_r ($f);
+ // $a = mysqli_fetch_assoc($f);
   
   if (!isset($a)){
     print("no entro");
@@ -40,10 +42,14 @@ function login($email, $clave){
 } else{
 
     $_SESSION= $a;
-    print("Se logueo");
-
+    header("Location: index.php");
     
-    //header("Location: index.php");
+   /* if(isset($_SESSION["registro"]["usuario"]) != "admin"){
+      header("Location: index.php");
+    }else{
+      header("Location: ABM/index.php");
+    }*/
+    // esta entrando pero no deja verificar
 }
 
   /*if( $a == NULL ){
