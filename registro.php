@@ -1,5 +1,8 @@
-<html>
-    <body>
+
+
+<?php
+include_once "header.php";
+?>
 
 <!--Formulario de registro-->
 <div class="row justify-content-center">
@@ -44,5 +47,11 @@
         </div>
     </div>
 </div>
-</body>
-</html>
+
+
+
+
+
+<?php
+include_once "footer.php";
+?>  

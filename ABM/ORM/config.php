@@ -12,7 +12,7 @@ function OpenCon()
  $dbuser = "root";
  $dbpass = "";
  $db = "productos";
- $port="3306";
+ $port="3463";
  //Una vez hecho esto, hacemos una variable para la conexión ($conn) y la igualamos a lo que recibirá con la función mysqli_connect()
  //mysqli_connect() pedirá host, usuario, contraseña y el nombre de la db.
  //piensenlo como un constructor. Deben respetar el orden que pide.

@@ -7,7 +7,7 @@ function OpenCon(){
     $dbuser = "root";
     $dbpass = "";
     $db = "usuariosmineria";
-    $port = "3306";
+    $port = "3463";
 
     $cnx = mysqli_connect($dbhost, $dbuser, $dbpass, $db, $port);
 
