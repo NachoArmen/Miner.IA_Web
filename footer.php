@@ -5,7 +5,7 @@
         <h5 class="text-uppercase"><strong>Social</strong></h5>
       </div>
       <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-        <h5 class="text-uppercase mb-0" ><a href="../index.php"><strong>Miner.IA</strong></a></h5>
+        <h5 class="text-uppercase mb-0" ><a href="index.php"><strong>Miner.IA</strong></a></h5>
       </div>
       <div class="d-flex justify-content-center mx-auto mb-4">
         <a href="https://es-la.facebook.com/"><i class="fab fa-facebook fa-2x mx-3"></i></a>
