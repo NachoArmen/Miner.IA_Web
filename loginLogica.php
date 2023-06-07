@@ -39,5 +39,5 @@ isset($_POST['contrasena'])){
 } else {
     print("Falta información requerida para iniciar sesión");
 }
-
-?>*/
+*/
+?>

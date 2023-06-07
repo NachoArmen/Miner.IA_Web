@@ -31,16 +31,18 @@ function login($email, $clave){
   $consulta = "SELECT email, contrasena FROM registro WHERE email='$email' AND contrasena=MD5('$clave') LIMIT 1";
   
   $f = mysqli_query($cnx, $consulta);
+  print ($f);
   $a = mysqli_fetch_assoc($f);
-
+  
   if (!isset($a)){
     print("no entro");
     //header("Location: indexLogin.php?login=error");
 } else{
+
     $_SESSION= $a;
     print("Se logueo");
 
-    var_dump($_SESSION);
+    
     //header("Location: index.php");
 }
 
