@@ -1,8 +1,10 @@
 <?php
 include_once "header.php";
+include('ABM/ORM/orm.php');
+session_start();
 ?>
 
-<h1 class="cali">Browse...Like...Buy</h1>
+<h1 class="title-idx">Browse...Like...Buy</h1>
 <br>
 <div class="container-fluid">
     <div class="row">
@@ -10,7 +12,10 @@ include_once "header.php";
             <div class="card cards-prod" style="width: 25rem;">
                 <img src="img/oro.jpg" class="card-img-top" alt="oro" width="398" height="265">
              <div class="card-body">
-                <h5 class="card-title">Gold (Au)</h5>
+                <?php 
+
+                "<h5 class='card-title'> </h5>";
+                ?>
                 <p class="card-text">INFO: PUREZA... PRECIO IDEAL...</p>
                 <a href="cart.php" class="btn btn-primary">ADD</a>
              </div>

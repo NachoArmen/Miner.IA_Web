@@ -31,25 +31,24 @@ function mostrar(){
 
     if ($resultado->num_rows > 0) {
         // Generar la tabla HTML con los datos obtenidos
-        echo "<table>";
-        echo "  <tr>
+        echo "<table class='tbl'>";
+        echo "  <tr class='cali'>
                 <th>Id</th>
-                <th>Nombre</th>
-                <th>Descripcion</th>
-                <th>Precio</th>
-                <th>Modificar</th>
-                <th>Borrar</th>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Modify</th>
+                <th>Delete</th>
                 </tr>";
 
         while ($fila = $resultado->fetch_assoc()) {
             echo "<tr>";
-            echo "<td>" . $fila["id"] . "</td>";
-            echo "<td>" . $fila["Nombre"] . "</td>";
+            echo "<td >" . $fila["id"] . "</td>";
+            echo "<td >" . $fila["Nombre"] . "</td>";
             echo "<td>" . $fila["Descripcion"] . "</td>";
             echo "<td>" . $fila["Precio"] . "</td>";
             print "<td><a href='modificar.php?id=$fila[id]'> Mod</a></td>";
-            print "<td><a href='eliminar.php?id=$fila[id]&&nombre=$fila[Nombre]'> Bor </a></td>";
-            
+            print "<td><a href='eliminar.php?id=$fila[id]&&nombre=$fila[Nombre]'> Del </a></td>";       
             echo "</tr>";
         }
 
@@ -75,9 +74,9 @@ function modificar($id){
                 //divide el resultado
                 print "<input  type='hidden' name='id' value=$fila[id] />";
                 
-                print "<label for='nombre'>Nombre: </label><input type='text' name='nombre' value='$fila[Nombre]'/><br><br>";
-                print "<label for='descripcion'>Descripcion: </label><input type='text' name='descripcion' value='$fila[Descripcion]'/><br><br>";
-                print "<label for='precio'>Precio: </label><input type='text' name='precio' value='$fila[Precio]'/><br><br>";
+                print "<label for='nombre'>Name: </label><input type='text' name='nombre' value='$fila[Nombre]'/><br><br>";
+                print "<label for='descripcion'>Description: </label><input type='text' name='descripcion' value='$fila[Descripcion]'/><br><br>";
+                print "<label for='precio'>Price: </label><input type='text' name='precio' value='$fila[Precio]'/><br><br>";
 
                 
                 print "<input type='submit' value='Modificar'/>";
@@ -94,8 +93,8 @@ function actualizar($id,$nombre,$descripcion,$precio){
 
     $sql = "UPDATE `minerales`SET Nombre='$nombre', Descripcion='$descripcion', Precio='$precio' WHERE id='$id'";
    if( $resultado = $conn->query($sql)){
-    print "<h1>El Mineral $nombre fue Modificado con los siguientes datos!!!</h1>";
-    print "Descripcion: $descripcion <br> Precio: $precio";
+    print "<h1>The mineral <strong>$nombre</strong>has been succesfully modified!!!</h1>";
+    print "Description: $descripcion <br> Price: $precio";
 
 
 

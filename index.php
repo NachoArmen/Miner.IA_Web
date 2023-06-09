@@ -2,36 +2,30 @@
 include_once "header.php";
 ?>
         <!--header-->
-  <h1 class="cali">Bienvenidos a Miner.IA</h1>  
+  <h1 class="title-idx">Welcome to Miner.IA</h1>  
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
-       <div class="carousel-item active">
-        <img src="img/camion.jpg" class="d-block w-100" alt="placeholder" width="1000" height="700">
+        <div class="carousel-item active">
+          <img src="img/camion.jpg" class="d-block w-100" alt="placeholder" width="1000" height="700">
+        </div>
+      </div>
     </div>
-       <div class="carousel-item ">
-        <img src="img/oro.jpg" class="d-block w-100" alt="placeholder" width="1000" height="500">
-    </div>
-       <div class="carousel-item ">
-        <img src="img/lapis.jpg" class="d-block w-100" alt="placeholder" width="1000" height="700">
-    </div>
-  </div>
-</div>
 
         <!--Cards para Our Partners-->
 <main class="container-fluid">
-  <div class="row">
-    
+  <div class="row">    
      <div class="col-6">
       <div class="row"> 
         <div class="col">
           <h2 class="title-idx">About Us</h2>
-          <p class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque nobis ea ad quam omnis? Numquam magnam itaque quia facilis accusantium alias vel, nam temporibus nihil, fuga iusto vitae est cupiditate!
-          Omnis enim placeat rem eaque, quidem officiis inventore facilis laboriosam totam assumenda, at reiciendis quibusdam deleniti corporis maiores quae nulla. Mollitia, quasi. Molestiae modi soluta minima? Nostrum dolorum sed dignissimos.
+          <p class="col txt-idx">Miner.IA is a dynamic and innovative company that specializes in mineral extraction and commercialization. With a relentless commitment to sustainability, cutting-edge technology, and responsible practices, Miner.IA is revolutionizing the mining industry and setting new standards for the extraction and trade of minerals.
+            At Miner.IA, we understand the immense value that minerals hold in powering economies and shaping industries worldwide. Our mission is to ethically and efficiently extract these precious resources, while minimizing the environmental impact and maximizing the benefits for local communities.
           </p>
-          <div class="col">
-            <img src="img/Logo_MinerIA.png" alt="Miner.IA" width="500" height="400">
+          <p class="col txt-idx">Miner.IA recognizes that successful mineral extraction is only part of the equation. We also excel in the commercialization of minerals, ensuring their seamless integration into global supply chains. With an extensive network of partners, including refineries, manufacturers, and distributors, we facilitate the efficient trade of minerals while maintaining strict adherence to ethical standards and responsible sourcing practices.
+            Miner.IA is poised to become a global leader in mineral extraction and commercialization. Our unwavering commitment to sustainability, technological innovation, responsible practices, and community engagement sets us apart in the industry. As we forge ahead, we continue to push boundaries, challenge conventions, and shape the future of mining while creating long-term value for our stakeholders and the planet. </p>
+          <div class="col justify-content-center">
+            <img src="img/Logo_MinerIA.png" alt="Miner.IA" width="700" height="400">
           </div> 
-          <p class="col">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis non nostrum, voluptatibus quia accusantium ipsum alias, labore optio nesciunt recusandae est facere ratione porro odit qui, at praesentium doloremque magni. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum dignissimos reprehenderit praesentium, aliquam corporis obcaecati nam. Repudiandae, sint. Ipsam vitae corporis repellendus, nulla repellat nam. </p>
         </div>  
       </div>  
      </div> 

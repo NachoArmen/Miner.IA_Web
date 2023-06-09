@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilo/estilo.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilo/estilo.css">   
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" crossorigin="anonymous"/> 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZEbT8E13Mv9O5wXwYjW3O+" crossorigin="anonymous">
@@ -31,17 +30,14 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="registro.php">Sign Up</a>
-            </li>
-            
+            </li>           
              <li class="nav-item">
-             <a class="nav-link" href="ABM/index.php">Admin</a>
+             <a  id="ad" class="nav-link" href="ABM/index.php">Admin</a>
              </li>
           </ul>
-          
-
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <a class="nav-link" href="cart.php">Cart 
+                <a class="nav-link cali" href="cart.php">Cart 
                     <span class="badge badge-primary">0</span>
                 </a>
             </li>

@@ -54,9 +54,7 @@
 
 /*FIN NAVBAR*/
 
-body{
-background-color: grey;
-}
+
 
 .title-idx{
   
@@ -67,7 +65,7 @@ background-color: grey;
 }
 
 .text-idx{
-
+  font-size: medium;
   display: flex;
   justify-content: flex-start;
   
@@ -80,8 +78,17 @@ background-color: grey;
 }
 
 
-section{
-display: flex;
-justify-content: end;
+
+
+.txt-idx{
+
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: medium;
+
+}
+
+.tbl{
+
+  border: black;
 
 }
