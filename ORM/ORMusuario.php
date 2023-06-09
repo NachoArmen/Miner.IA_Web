@@ -30,7 +30,7 @@ function login($email, $contrasena){
   $cnx = OpenCon();
   $sql= "SELECT email, contrasena, usuario FROM registro WHERE email='$email' AND contrasena=MD5('$contrasena') LIMIT 1";
   
- $a = $cnx->query($sql) or die(print_r($cnx->error));
+  $a = $cnx->query($sql) or die(print_r($cnx->error));
 
   //$f = mysqli_query($consulta);
   //print_r ($f);
@@ -40,10 +40,8 @@ function login($email, $contrasena){
     print("no entro");
     //header("Location: indexLogin.php?login=error");
 } else{
-
-    $_SESSION= $a;
-    header("Location: index.php");
-    
+      $_SESSION = $a;
+      header("Location: index.php");  
    /* if(isset($_SESSION["registro"]["usuario"]) != "admin"){
       header("Location: index.php");
     }else{

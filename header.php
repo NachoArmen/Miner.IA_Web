@@ -12,13 +12,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Wallpoet&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="lib/bootstrap/js/bootstrap.min.js">
-    <link rel="stylesheet" href="lib/jquery/jquery-3.3.1.min.js">
-    <link rel="stylesheet" href="lib/popper/popper.min.js">
-    <script src="lib/jquery/jquery-3.3.1.min.js"></script>
-    <script src="lib/popper/popper.min.js"></script>
-    <script src="lib/bootstrap/js/bootstrap.min.js"></script> 
     <title>Miner.IA</title>
 </head>
 <body>

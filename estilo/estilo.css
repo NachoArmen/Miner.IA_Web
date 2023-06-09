@@ -54,13 +54,12 @@
 
 /*FIN NAVBAR*/
 
-  h1{
-    text-align: center;
-  }
-
+body{
+background-color: grey;
+}
 
 .title-idx{
-  display: inline-block;
+  
   justify-content: end;
   font-family: 'Wallpoet', cursive;
   text-align: center;
