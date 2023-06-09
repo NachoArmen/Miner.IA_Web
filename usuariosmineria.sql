@@ -41,8 +41,7 @@ CREATE TABLE `registro` (
 --
 
 INSERT INTO `registro` (`ID`, `nombre`, `apellido`, `email`, `usuario`, `contrasena`) VALUES
-(1, '', '', '', '', ''),
-(2, '', '', '', '', '');
+(1, 'Nacho', 'Diaz', 'ndrivero@gmail.com', 'admin', '9876');
 
 --
 -- Índices para tablas volcadas
