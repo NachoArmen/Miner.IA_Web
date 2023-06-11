@@ -22,14 +22,14 @@ include_once "header.php";
                                     <div class="col">
                                         <div class="row">
                                             <label class="title-idx" for="email">E-mail: </label>
-                                            <input type="email" name="email" class="form-control input_user" placeholder="E-mail">
+                                            <input type="email" name="email" class="form-control input_user" placeholder="E-mail" required>
                                         </div>                                          
                                     </div>
                                     <br>
                                     <div class="col">
                                         <div class="row">
                                             <label class="title-idx" for="contrasena">Password: </label>
-                                            <input type="password" name="contrasena" class="form-control input_pass" placeholder="Password">
+                                            <input type="password" name="contrasena" class="form-control input_pass" placeholder="Password" required>
                                         </div>                                        
                                     </div>   
                                 </div>

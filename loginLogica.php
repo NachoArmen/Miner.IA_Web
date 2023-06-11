@@ -12,7 +12,7 @@ if(isset($_POST['email']) && isset($_POST['contrasena'])){
   $orm->login($email, $contrasena);
 }else{
 
-  echo"<h2>pOR FAVOR RELLENE LOS CAMPOS</h2>";
+  echo"<h2>POR FAVOR RELLENE LOS CAMPOS</h2>";
 }
 
 ?>

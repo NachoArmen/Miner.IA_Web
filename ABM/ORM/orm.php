@@ -62,6 +62,56 @@ function mostrar(){
 
 }
 
+function mostrarCard(){
+    $conn = openCon();
+
+    $sql="SELECT Nombre,Descripcion,Precio,img FROM `minerales` ";
+    $resultado = $conn->query($sql);
+
+    if ($resultado->num_rows > 0) {
+        // Generar la tabla HTML con los datos obtenidos
+       /* echo "<table class='tbl'>";
+        echo "  <tr class='cali'>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Price</th>
+                </tr>";*/
+
+        while ($fila = $resultado->fetch_assoc()) {
+
+      echo   ' <div class="col">
+            <div class="card" style="width: 25rem;">
+                <img src="../../img/esme.jpg" class="card-img-top" alt="" width="398" height="265">
+             <div class="card-body">
+                <h5 class="card-title">'. $fila["Nombre"] .'</h5>
+                <p class="card-text">'.$fila["Descripcion"].'</p>
+                <p class="card-text">'.$fila["Precio"].'</p>
+                <a href="../../cart.php" class="btn btn-primary">ADD</a>
+             </div>
+            </div>
+        </div>';
+
+          /*  echo "<tr>";
+            echo "<td >" . $fila["Nombre"] . "</td>";
+            echo "<td>" . $fila["Descripcion"] . "</td>";
+            echo "<td>" . $fila["Precio"] . "</td>";
+            print "<td><a href='../../cart.php'> ADD</a></td>";
+              //print "<td><a href='../../cart.php?id=$fila[id]&&nombre=$fila[Nombre]'> Del </a></td>";    
+            echo "</tr>";
+            //agregar el id del producto y pasarlo por get a cart.php
+            */
+        }
+
+        echo "</table>";
+    } else {
+        echo "No se encontraron resultados.";
+    }
+    print "</table>";
+
+
+
+}
+
 function modificar($id){
     $conn = openCon();
 
