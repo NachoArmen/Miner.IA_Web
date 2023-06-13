@@ -81,7 +81,7 @@ function mostrarCard(){
 
       echo   ' <div class="col">
             <div class="card" style="width: 25rem;">
-                <img src="../../img/esme.jpg" class="card-img-top" alt="" width="398" height="265">
+                <img src="img/'.$fila["img"].'" class="card-img-top" alt="IMAGEN CABRON" width="398" height="265">
              <div class="card-body">
                 <h5 class="card-title">'. $fila["Nombre"] .'</h5>
                 <p class="card-text">'.$fila["Descripcion"].'</p>

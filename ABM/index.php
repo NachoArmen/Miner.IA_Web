@@ -44,9 +44,11 @@ include('ORM/orm.php');
  
 ?>
 <br>
-    <div class="row">   
+    <div class="row">  
+        <div class="col">
         <button class="cali" id="agregar">Add</button>
         <button class="cali" id="volver">Back</button>
+        </div>     
     </div>
     
 

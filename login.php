@@ -22,14 +22,14 @@ include_once "header.php";
                                     <div class="col">
                                         <div class="row">
                                             <label class="title-idx" for="email">E-mail: </label>
-                                            <input type="email" name="email" class="form-control input_user" placeholder="E-mail" required>
+                                            <input type="email" id="email" name="email" class="form-control input_user" placeholder="E-mail" required>
                                         </div>                                          
                                     </div>
                                     <br>
                                     <div class="col">
                                         <div class="row">
                                             <label class="title-idx" for="contrasena">Password: </label>
-                                            <input type="password" name="contrasena" class="form-control input_pass" placeholder="Password" required>
+                                            <input type="password" id="contrasena" name="contrasena" class="form-control input_pass" placeholder="Password" required>
                                         </div>                                        
                                     </div>   
                                 </div>
@@ -37,7 +37,7 @@ include_once "header.php";
                             </div>
                         </div>
                         <div class="d-flex justify-content-center mt-3 login_container">
-                            <button class='cali' id='sup' type='submit'>Sign Up</button>
+                            <button class='cali' id='sup' type='submit'>Log In</button>
                         </div>
                     </form>
                 </div>

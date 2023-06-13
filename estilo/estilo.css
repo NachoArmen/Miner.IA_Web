@@ -87,8 +87,13 @@
 
 }
 
-.tbl{
+.tbl {
+  border-collapse: collapse;
+  width: 100%;
+}
 
-  border: black;
-
+.tbl th, .tbl td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
 }

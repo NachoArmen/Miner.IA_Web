@@ -9,8 +9,7 @@ $orm = new ORM();
 <h1 class="title-idx">Browse...Like...Buy</h1>
 <br>
 <div class="container-fluid">
-    <div class="row">
-                 
+    <div class="row">               
                 <?php 
                 $orm->mostrarCard();
                 ?>                    
