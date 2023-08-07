@@ -7,8 +7,10 @@ if(isset($_POST['email']) && isset($_POST['contrasena'])){
 
   $email=$_POST['email'];
 	
+
   $contrasena=($_POST['contrasena']);
   $hash = md5($contrasena);
+
 
 
   $orm->login($email, $contrasena);
