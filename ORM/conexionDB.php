@@ -6,7 +6,7 @@ function OpenCon(){
     $dbhost = "localhost";
     $dbuser = "root";
     $dbpass = "";
-    $db = "minerweb";
+    $db = "usuariosmineria";
     $port = "3306";
 
     $cnx = mysqli_connect($dbhost, $dbuser, $dbpass, $db, $port);

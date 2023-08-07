@@ -28,15 +28,12 @@ function login($email, $contrasena){
 
   $cnx = OpenCon();
   $sql= "SELECT email, contrasena FROM registro WHERE email='$email' AND contrasena=MD5('$contrasena') LIMIT 1";
-  $a = $cnx->query($sql);
-  
-// Hasta aca esta bien , pero luego no cumple la condicion del if. PREGUNTAR
+  $result = $cnx->query($sql);
 
 
 
-
- if (mysqli_num_rows($a) > 0){ 
-  $row = $a->fetch_assoc();
+ if (mysqli_num_rows($result) > 0){ 
+  $row = $result->fetch_assoc();
   $_SESSION['email'] = $row['email'];
   $_SESSION['contrasena'] = $row['contrasena'];
   header("Location: index.php");
