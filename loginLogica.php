@@ -7,7 +7,7 @@ if(isset($_POST['email']) && isset($_POST['contrasena'])){
 
   $email=$_POST['email'];
 	
-  $contrasena=$_POST['contrasena'];
+  $contrasena=$_POST[('contrasena')];
 
   $orm->login($email, $contrasena);
 }
