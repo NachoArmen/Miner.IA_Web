@@ -30,10 +30,14 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="registro.php">Sign Up</a>
-            </li>           
+            </li>
+
+
+
              <li class="nav-item">
-             <a  id="ad" class="nav-link" href="ABM/index.php">Admin</a>
+             <a  id="ad" class="nav-link" href="ABM/index.php" >Admin</a>
              </li>
+
           </ul>
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">

@@ -16,7 +16,7 @@ function insertarDB(Mineral $mineral)
     $precio= $mineral->get_precio();
 
   
-        $sql= "INSERT INTO minerales (Nombre, Descripcion, Precio, img) VALUES ('$nombre', '$descripcion','$precio','$imagen')";
+        $sql= "INSERT INTO minerales (Nombre, Descripcion, Precio, img) VALUES ('$nombre', '$descripcion','$precio','img/$imagen')";
         //print_r($sql);
         //ahora $conn toma la query que hicimos en $sql, y la lleva a la base de datos en donde va a hacerse el insert.
         //en caso de haber un error, lo atraparemos y cerraremos la conexión con "die()"
@@ -81,7 +81,7 @@ function mostrarCard(){
 
       echo   ' <div class="col">
             <div class="card" style="width: 25rem;">
-                <img src="img/'.$fila["img"].'" class="card-img-top" alt="IMAGEN CABRON" width="398" height="265">
+                <img src="'.$fila["img"].'" class="card-img-top" alt="IMAGEN CABRON" width="398" height="265">
              <div class="card-body">
                 <h5 class="card-title">'. $fila["Nombre"] .'</h5>
                 <p class="card-text">'.$fila["Descripcion"].'</p>
