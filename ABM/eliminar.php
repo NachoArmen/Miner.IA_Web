@@ -10,7 +10,7 @@ if(isset($_GET['id']) and isset($_GET['nombre'])){
     
 ?>
 
-<button id="volver">Volver</button>
+<button id="volver" class="cali">Back</button>
 
 <script>
     var bt = document.getElementById('volver');

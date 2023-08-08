@@ -97,6 +97,7 @@ if(!empty($_SESSION["item_carrito"])) {
 
     <?php
 if(isset($_SESSION["item_carrito"])){
+    echo '<a href="purchase.php" id="botonComprar">Complete Purchase</a>';
     $cantidad_total = 0;
     $precio_total = 0;
 ?>	
@@ -134,11 +135,9 @@ if(isset($_SESSION["item_carrito"])){
                     <a href="cart.php?accion=quitar&id=<?php echo $item["id"]; ?>" class="botonQuitarAccion"><img src="img/icon-delete.png" alt="Quitar item" /></a>
                 </td>
 				</tr>
-                <a href="purchase.php">Complete Purchase</a>
 				<?php
                 
-				$cantidad_total += $item["cantidad"];
-                
+				$cantidad_total += $item["cantidad"];               
 				$precio_total += ($item["Precio"]*$item["cantidad"]);
 		}
 		?>
@@ -151,7 +150,6 @@ if(isset($_SESSION["item_carrito"])){
 <td align="right" colspan="2">
     <strong><?php echo "$ ".number_format($precio_total, 2); ?></strong>
 </td>
-
 </tr>
 </tbody>
 </table>	

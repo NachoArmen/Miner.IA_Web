@@ -224,11 +224,31 @@
 
 #botonComprar {
 	background-color: #ffffff;
-	border: #d00000 1px solid;
+	border: #03d000 1px solid;
 	padding: 5px 10px;
-	color: #d00000;
+	color: #03d000;
 	float: right;
 	text-decoration: none;
 	border-radius: 3px;
 	margin: 10px 0px;
 }
+
+.container {
+  display: flex;
+  justify-content: space-between; 
+}
+
+.items {
+  text-align:center;
+}
+
+.item-list {
+  display: flex;
+  align-items: center;
+}
+
+.totals {
+  text-align: center;
+}
+
+
