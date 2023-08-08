@@ -22,27 +22,51 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav mr-auto cali">
-            <li class="nav-item">
-                <a class="nav-link" href="products.php">Products</a>
-            </li>      
-            <li class="nav-item active">
-                <a class="nav-link" href="login.php">Login</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="registro.php">Sign Up</a>
-            </li>
-
-
-
-             <li class="nav-item">
-             <a  id="ad" class="nav-link" href="ABM/index.php" >Admin</a>
-             </li>
-
+                 
+            <?php
+            
+            
+if (session_start() && isset($_SESSION['email'])) {
+    // The user is logged in, so hide the login and register buttons
+    $rol= $_SESSION['usuario'];
+    if($rol=='admin'){
+        echo '<li class="nav-item">
+        <a class="nav-link" href="products.php">Products</a>
+      </li>';
+      echo '<li class="nav-item">
+        <a class="nav-link" href="ABM/index.php">Admin</a>
+      </li>';
+    echo '<li class="nav-item">
+        <form action="logout.php" method="post">
+            <button type="submit">Log Out</button>
+        </form>
+    </li>'; 
+    }else{
+        echo '<li class="nav-item">
+        <a class="nav-link" href="products.php">Products</a>
+      </li>';
+    echo '<li class="nav-item">
+        <form action="logout.php" method="post">
+            <button type="submit">Log Out</button>
+        </form>
+    </li>'; 
+    }  
+} else {
+    // The user is not logged in, so show the login and register buttons
+    echo '<li class="nav-item">
+            <a class="nav-link" href="login.php">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="registro.php">Sign Up</a>
+          </li>';
+}
+?>
+     
           </ul>
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
                 <a class="nav-link cali" href="cart.php">Cart 
-                    <span class="badge badge-primary">0</span>
+                    
                 </a>
             </li>
         </ul>

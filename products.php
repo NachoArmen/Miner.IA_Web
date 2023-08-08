@@ -1,7 +1,7 @@
 <?php
 include_once "header.php";
 include('ABM/ORM/orm.php');
-session_start();
+
 
 $orm = new ORM();
 ?>

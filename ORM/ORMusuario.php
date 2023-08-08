@@ -27,22 +27,27 @@ $cnx->query($sql) or die(print_r($cnx->error));
 function login($email, $contrasena){
 
   $cnx = OpenCon();
-  $sql= "SELECT email, contrasena FROM registro WHERE email='$email' AND contrasena=MD5('$contrasena') LIMIT 1";
+  $sql= "SELECT email, contrasena,usuario FROM registro WHERE email='$email' AND contrasena=MD5('$contrasena') LIMIT 1";
   $result = $cnx->query($sql);
 
 
 
  if (mysqli_num_rows($result) > 0){ 
-  $row = $result->fetch_assoc();
-  $_SESSION['email'] = $row['email'];
-  $_SESSION['contrasena'] = $row['contrasena'];
-  header("Location: index.php");
- }else{
   
-    print("no entro");
+    $row = $result->fetch_assoc();
+    $_SESSION['email'] = $row['email'];
+    $_SESSION['contrasena'] = $row['contrasena'];
+    $_SESSION['usuario']=$row['usuario'];    
+    header("Location: index.php");  
+ }else{
+    print("Oops...an error has ocurred. Please check your credentials or talk to an admin if the problem persists.");    
     //header("Location: indexLogin.php?login=error");
  } 
 }
+
+
+
+
 
   } //llave de cierre de la class
 

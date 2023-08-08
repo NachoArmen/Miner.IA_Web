@@ -6,7 +6,7 @@ include_once "header.php";
 <h1 class="cali">¿Ready to check out?</h1>
 <?php
 //Iniciamos una sesión, para poder guardar lo que vamos a ir agregando y quitando de nuestro carrito
-session_start();
+
 
 //Conectamos con nuestra base de datos. Esta vez estamos haciendo MySQLi pero con objetos.
 require_once('ABM/ORM/configCarrito.php');
@@ -22,31 +22,14 @@ if(!empty($_GET["accion"])) {
 //El primer caso es "Meter". Para esto, revisamos que la cantidad que recibamos con $_POST en nuestro carrito no sea 0.
 //Si no lo esta, entonces pasamos el primer "if", y recibimos el código de nuestro producto (una variable para identificarlo), y hacemos la query para traer el producto que coincida con ese código.
 //Luego, creamos un array con nuestros productos.
-        case "meter":
+       case "meter":
             if(!empty($_POST["cantidad"])) {
                 $codigoProducto = $db_handle->runQuery("SELECT * FROM minerales WHERE id='" . $_GET["id"] . "'");
                 $itemArray = array($codigoProducto[0]["id"]=>array('Nombre'=>$codigoProducto[0]["Nombre"], 'id'=>$codigoProducto[0]["id"], 'cantidad'=>$_POST["cantidad"], 'Precio'=>$codigoProducto[0]["Precio"], 'img'=>$codigoProducto[0]["img"]));
                 
 //Ahora, vamos a otros dos "if". El primero chequea que el carrito de nuestra sesión no esté vacio. Si no lo está, pasamos al segundo "if", en donde revisamos si los productos en el array comparten
 //el mismo código. En caso de que si, entonces sabemos que son el mismo producto, y el carrito entonces sabrá la cantidad que tiene de ese producto en específico.
-if(!empty($_SESSION["item_carrito"])) {
 
-    $exists = false;
-
-    foreach($_SESSION["item_carrito"] as $k => $v) {
-      if($codigoProducto[0]["id"] == $k) {
-        $_SESSION["item_carrito"][$k]["cantidad"] += $_POST["cantidad"];
-        $exists = true;
-      }
-    }
-
-    if(!$exists) {
-      $_SESSION["item_carrito"] = array_merge($_SESSION["item_carrito"], $itemArray);
-    }
-
-  } else {
-    $_SESSION["item_carrito"] = $itemArray;
-  }
             }
         break;
 

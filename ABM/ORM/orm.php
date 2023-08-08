@@ -81,12 +81,12 @@ function mostrarCard(){
 
       echo   ' <div class="col">
             <div class="card" style="width: 25rem;">
-                <img src="'.$fila["img"].'" class="card-img-top" alt="IMAGEN CABRON" width="398" height="265">
+                <img src="'.$fila["img"].'" class="card-img-top" alt="IMAGEN NO ENCONTRADA" width="398" height="265">
              <div class="card-body">
                 <h5 class="card-title">'. $fila["Nombre"] .'</h5>
                 <p class="card-text">'.$fila["Descripcion"].'</p>
                 <p class="card-text">'.$fila["Precio"].'</p>
-                <a href="../../cart.php" class="btn btn-primary">ADD</a>
+                
              </div>
             </div>
         </div>';

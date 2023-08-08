@@ -15,6 +15,7 @@ class Usuario{
         $this->apellido=$apellido;
         $this->email=$email;
         $this->contrasena=$contrasena;
+        
     }
 
 
