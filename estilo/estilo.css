@@ -151,9 +151,9 @@
 }
 
 .item-producto {
-	
+	margin: 5px;
 	background: #ffffff;
-	
+	justify-items: baseline;
 	
 }
 
@@ -216,72 +216,19 @@
     margin-right: 15px;
 }
 .no-hay-nada {
+  justify-content:center;
 	text-align: center;
 	clear: both;
 	margin: 38px 0px;
 }
 
-.btn-primary {
-  background-color: #46a2e3;
-  border-color: #46a2e3;
-  color: white;
-  }
-  
-  .btn-primary:hover {
-  background-color: #3089d6;
-  border-color: #3089d6;
-  }
-  
-  .btn-primary:focus, .btn-primary:active {
-  background-color: #3089d6;
-  border-color: #3089d6;
-  color: white;
-  }
-  
-  .btn-danger {
-  background-color: #d00000;
-  border-color: #d00000;
-  color: white;
-  }
-  
-  .btn-danger:hover {
-  background-color: #c00000;
-  border-color: #c00000;
-  }
-  
-  .btn-danger:focus, .btn-danger:active {
-  background-color: #c00000;
-  border-color: #c00000;
-  color: white;
-  }
-  
-  .btn-success {
-  background-color: #211a1a;
-  border-color: #211a1a;
-  color: white;
-  }
-  
-  .btn-success:hover {
-  background-color: #171212;
-  border-color: #171212;
-  }
-  
-  .btn-success:focus, .btn-success:active {
-  background-color: #171212;
-  border-color: #171212;
-  color: white;
-  }
-  
-  .btn-warning {
-  background-color: #ff9900;
-  border-color: #ff9900;
-  color: white;
-  }
-  
-  .btn-warning:hover {
-  background-color: #e08f00;
-  border-color: #e08f00;
-  }
-  
-  .btn-warning:focus, .btn-warning:active {
-  background-color: #e08f}
+#botonComprar {
+	background-color: #ffffff;
+	border: #d00000 1px solid;
+	padding: 5px 10px;
+	color: #d00000;
+	float: right;
+	text-decoration: none;
+	border-radius: 3px;
+	margin: 10px 0px;
+}

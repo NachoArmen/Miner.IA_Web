@@ -86,7 +86,7 @@ function mostrarCard(){
                 <h5 class="card-title">'. $fila["Nombre"] .'</h5>
                 <p class="card-text">'.$fila["Descripcion"].'</p>
                 <p class="card-text">'.$fila["Precio"].'</p>
-                
+                <a href="cart.php" class="btn btn-primary">Cart</a>
              </div>
             </div>
         </div>';
